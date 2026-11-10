@@ -1,0 +1,14 @@
+# dsh-confirm-mode bundle patch
+#
+# This file is the `dsh.bundle.patch` layer of the package: when the plugin is
+# installed with the DSH plugin manager, the CLI appends this bundle to the
+# profile stack and this patch inserts the plugin row. The row's module name is
+# the package name, resolved through the profile's node_modules.
+#
+# `config` is intentionally absent: the plugin's shipped defaults
+# (defaultMode: off, sensitiveTools: []) are the correct starting point, and a
+# user who wants to change them edits them in Settings → Plugins (which writes
+# the profile patch) or adds their own override here.
+- insert:
+    - id: dsh-confirm-mode
+      name: 'dsh-confirm-mode'

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Confirm Mode",
+    "description": "Adds a Confirm Mode toggle next to the permission selector: while on, every sensitive-permission invocation (a sandbox escalation, or a call requesting elevated sandbox_permissions) asks you to confirm one call at a time instead of being auto-approved. Independent of creation mode and of DSH's built-in permission presets."
+  }
+}
