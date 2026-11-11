@@ -64,6 +64,12 @@ DSH 在 Full Access 下不会发起任何审批请求，所以「确认模式」
 
 需要 dsh CLI（`>=0.1.1-rc.2`，实测 `0.2.1-rc.5`）。
 
+已发布到 npm（`dsh-confirm-mode@0.1.0`），推荐这种方式：
+
+```
+dsh plugin --profile desktop add dsh-confirm-mode
+```
+
 从本地目录安装（开发态）：
 
 ```
@@ -73,7 +79,7 @@ dsh plugin --profile desktop add E:\DSAgent\workspace\dsh-confirm-mode
 或从 Git 仓库安装：
 
 ```
-dsh plugin --profile desktop add github:<owner>/dsh-confirm-mode
+dsh plugin --profile desktop add github:9etro0-arch/dsh-confirm-mode
 ```
 
 安装后确认组合层里出现该插件：
